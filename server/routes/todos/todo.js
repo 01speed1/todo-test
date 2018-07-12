@@ -29,7 +29,6 @@ module.exports = (express) => {
     todoRoutes.put("/:id_todo",async (req, res)=>{
         const id = req.params.id_todo
         delete  req.body._id
-        console.log(id);
         await TodoModel.findByIdAndUpdate(id,req.body)
         let updatedItem = await TodoModel.findById(id)
         res.json(updatedItem)
