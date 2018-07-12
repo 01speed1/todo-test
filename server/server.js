@@ -1,5 +1,6 @@
-let express = require('express')
-let app = express()
+const express = require('express')
+const app = express()
+const path = require('path')
 
 //cors
 var cors = require('cors')
@@ -16,6 +17,12 @@ let { serverPort, serverDB }  = require('./config/config.js')
 // Database
 const mongoose = require('mongoose')
 mongoose.connect(serverDB, { useNewUrlParser: true });
+
+
+
+const publicPath = path.resolve(__dirname, 'public/');
+console.log(publicPath);
+app.use(express.static(publicPath));
 
 //routes
 let allRoutes = require("./routes/index.routes");
