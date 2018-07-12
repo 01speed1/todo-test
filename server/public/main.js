@@ -533,6 +533,7 @@ var TodosComponent = /** @class */ (function () {
     function TodosComponent(_ts, fb) {
         this._ts = _ts;
         this.fb = fb;
+        this.allTodos = [];
         this.editing = false;
     }
     TodosComponent.prototype.ngOnInit = function () {

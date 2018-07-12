@@ -14,7 +14,7 @@ import { Todo } from '../../classes/Todo.class'
 export class TodosComponent implements OnInit {
 
     TodoForm: FormGroup
-    allTodos: Array<Todo>
+    allTodos: Array<Todo> = []
     editing:Boolean = false
     todoEditing:Todo
 
