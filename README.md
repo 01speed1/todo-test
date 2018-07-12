@@ -15,3 +15,6 @@ base de datos noSQL en la nube de [https://mlab.com/](https://mlab.com/)
 4. ejecute en otro terminal `npm run server` para inicar el servidor local del api REST
 5. en el navegar abra `http://localhost:4200/` para empezar a usar la aplicacion :D 
 
+## Demo 
+[App corriendo en linea](https://todo-prueba.glitch.me/)
+
